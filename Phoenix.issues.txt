@@ -66,16 +66,76 @@ n:tourist [TOURISM]
 </ISSUE>
 
 
+<ISSUE CATEGORY="ENERGY" TYPE="ALL">
+oil [OIL]
+light sweet crude [OIL]
+petroleum [OIL]
+tar n:sand [OIL]
+gasoline [OIL]
+diesel fuel [OIL]
+jet fuel [OIL]
+~olive oil
+~non+oil
+~gutter oil
+~~cooking oil
+~canola oil
+~sunflower oil
+~walnut oil
+~corn oil
+~fats and oils
+~whale oil
+~coconut oil
+~palm oil
+~soybean oil
+~peanut oil
+~safflower oil
+~sesame oil
+
+coal [COAL]
+anthracite [COAL]
+lignite [COAL]
+bituminous [COAL]
+
+methane [NATURAL_GAS]
+natural gas [NATURAL_GAS]
+frack [NATURAL_GAS]
+fracking [NATURAL_GAS]
+shale gas [NATURAL_GAS]
+
+nuclear energy [NUCLEAR_ENERGY]
+nuclear n:reactor [NUCLEAR_ENERGY]
+nuclear n:plant [NUCLEAR_ENERGY]
+nuclear power [NUCLEAR_ENERGY]
+
+solar n:panel [RENEWABLE_ENERGY]
+photovoltaic [RENEWABLE_ENERGY]
+solar power [RENEWABLE_ENERGY]
+solar+v:power [RENEWABLE_ENERGY]
+solar energy [RENEWABLE_ENERGY]
+wind n:turbine [RENEWABLE_ENERGY]
+wind n:farm [RENEWABLE_ENERGY]
+wind power [RENEWABLE_ENERGY]
+hydroelectric [RENEWABLE_ENERGY]
+hydroelectricity [RENEWABLE_ENERGY]
+hydropower [RENEWABLE_ENERGY]
+biomass [RENEWABLE_ENERGY]
+biofuel [RENEWABLE_ENERGY]
+geothermal energy [RENEWABLE_ENERGY]
+geothermal power [RENEWABLE_ENERGY]
+</ISSUE>
+
+
+
 <ISSUE CATEGORY="EUROPEAN_UNION" TYPE="ALL">
 eu [EUROPEAN_UNION]
 e.u. [EUROPEAN_UNION]
-european central bank
-eec
-e.e.c.
-ecb
-e.c.b.
-e.c.b.
-eurozone
+european central bank [EUROPEAN_UNION]
+eec [EUROPEAN_UNION]
+e.e.c. [EUROPEAN_UNION]
+ecb [EUROPEAN_UNION]
+e.c.b. [EUROPEAN_UNION]
+e.c.b. [EUROPEAN_UNION]
+eurozone [EUROPEAN_UNION]
 european union [EUROPEAN_UNION]
 european commission [EUROPEAN_UNION]
 european parliament [EUROPEAN_UNION]
