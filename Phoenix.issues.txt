@@ -3,13 +3,11 @@
 
 <ISSUE CATEGORY="EDUCATION" TYPE="ALL">
 
-preschool [EARLY_CHILDHOOD_EDUCATION]
-preschools [EARLY_CHILDHOOD_EDUCATION]
-pre+school [EARLY_CHILDHOOD_EDUCATION]
-pre+schools [EARLY_CHILDHOOD_EDUCATION]
+n:preschool [EARLY_CHILDHOOD_EDUCATION]
+pre+n:school [EARLY_CHILDHOOD_EDUCATION]
 n:kindergarten [EARLY_CHILDHOOD_EDUCATION]
 n:kindergartener [EARLY_CHILDHOOD_EDUCATION]
-early childhood education [EARLY_CHILDHOOD_EDUCATION]
+early+childhood education [EARLY_CHILDHOOD_EDUCATION]
 head start [EARLY_CHILDHOOD_EDUCATION]
 pre+k [EARLY_CHILDHOOD_EDUCATION]
 pre+kindergarden [EARLY_CHILDHOOD_EDUCATION]
@@ -18,12 +16,14 @@ pre+kindergarden [EARLY_CHILDHOOD_EDUCATION]
 
 n:teacher [TEACHERS]
 n:educator [TEACHERS]
+faculty n:member [TEACHERS]
 
 n:student [STUDENTS]
 n:pupil [STUDENTS]
 n:classmate [STUDENTS]
 
 n:school [SCHOOLS]
+n:academy [SCHOOLS]
 
 n:college [POSTSECONDARY_EDUCATION]
 n:university [POSTSECONDARY_EDUCATION]
@@ -58,6 +58,10 @@ illiteracy [LITERACY]
 
 <ISSUE CATEGORY="TOURISM" TYPE="ALL">
 tourism [TOURISM]
+touristry[TOURISM]
+n:traveler[TOURISM]
+n:holidaymaker[TOURISM]
+n:tourer[TOURISM]
 n:tourist [TOURISM]
 </ISSUE>
 
@@ -66,7 +70,10 @@ n:tourist [TOURISM]
 eu [EUROPEAN_UNION]
 e.u. [EUROPEAN_UNION]
 european central bank
+eec
+e.e.c.
 ecb
+e.c.b.
 e.c.b.
 eurozone
 european union [EUROPEAN_UNION]
@@ -82,6 +89,24 @@ european integration [EUROPEAN_UNION]
 ~eu genes
 ~fong eu
 ~eu rope
+~eec directive
+~~enterprise engineering consultants
+~~medical device directive
+~~environmental education center
+~~electronic engine control
+~~electronic engine controller
+~~edison electric company
+~~energy efficiency commitment
+~~environmental export council
+~~emergency essential civilian
+~~environmental education committee
+~~energy efficiency commitment
+~~earth engineering center
+~~electronic underground
+~~england and wales cricket board
+~~emacs code browser
+~~english cricket board
+~~election commission of bhutan
 </ISSUE>
 
 
@@ -250,6 +275,8 @@ drug violence [DRUG_TRADE]
 narco [DRUG_TRADE]
 narcos [DRUG_TRADE]
 narcotic trafficking [DRUG_TRADE]
+drug n:pusher [DRUG_TRADE]
+drug n:dealer [DRUG_TRADE]
 drug cartel [DRUG_TRADE]
 
 mafia [ORGANIZED_CRIME]
@@ -257,8 +284,9 @@ n:gang [ORGANIZED_CRIME]
 n:mobster [ORGANIZED_CRIME]
 organized crime [ORGANIZED_CRIME]
 organised crime [ORGANIZED_CRIME]
-cartel [ORGANIZED_CRIME]
-cartels [ORGANIZED_CRIME]
+alleged mafioso [ORGANIZED_CRIME]
+n:racketeer [ORGANIZED_CRIME]
+racketeering [ORGANIZED_CRIME]
 ~gang+rape
 ~gang up
 ~hi gang
@@ -282,6 +310,17 @@ n:thief [COMMON_ROBBERY]
 n:robber [COMMON_ROBBERY]
 street crime [COMMON_ROBBERY]
 street n:criminal [COMMON_ROBBERY]
+
+# more serious crimes, too?
+# Lots of potential for false positives ("Senators hijacked the meeting...")
+#kidnap
+#kidnapper
+#bribery
+#briber
+#arson
+#arsonist
+#extortionist
+#hijacker
 </ISSUE>
 
 
@@ -296,14 +335,11 @@ extreme right [ID_EXTREMISM]
 radical [ID_EXTREMISM]
 fanatical [ID_EXTREMISM]
 fanaticism [ID_EXTREMISM]
-far left [ID_EXTREMISM]
-far right [ID_EXTREMISM]
 far+left [ID_EXTREMISM]
 far+right [ID_EXTREMISM]
 farleft [ID_EXTREMISM]
 farright [ID_EXTREMISM]
-fringe element [ID_EXTREMISM]
-fringe elements [ID_EXTREMISM]
+fringe n:element [ID_EXTREMISM]
 n:nazi [ID_EXTREMISM]
 n:neonazi [ID_EXTREMISM]
 n:zealot [ID_EXTREMISM]
@@ -380,6 +416,7 @@ potable water [WATER_SECURITY]
 <ISSUE CATEGORY="AGRICULTURE" TYPE="ALL">
 agriculture [AGRICULTURE]
 agricultural [AGRICULTURE]
+animal husbandry [AGRICULTURE]
 n:farm [AGRICULTURE]
 v:farm [AGRICULTURE]
 n:farmer [AGRICULTURE]
@@ -465,8 +502,7 @@ smashed police [VIOLENT_UNREST]
 v:smash n:car [VIOLENT_UNREST]
 violent n:protests [VIOLENT_UNREST]
 violent unrest [VIOLENT_UNREST]
-rioter [VIOLENT_UNREST]
-rioters [VIOLENT_UNREST]
+n:rioter [VIOLENT_UNREST]
 riot police [VIOLENT_UNREST]
 # "riot" gets too much pussy riot. "rioter" works better.
 # "barricade" gets too many crazy Americans with guns.
@@ -514,27 +550,145 @@ stabilization force [PEACEKEEPERS]
 stabilization forces [PEACEKEEPERS]
 un forces [PEACEKEEPERS]
 united nations forces [PEACEKEEPERS]
+african union mission in somalia [PEACEKEEPERS]
+united nations angola verification mission [PEACEKEEPERS]
+united nations operation in the congo [PEACEKEEPERS]
+united nations transition assistance group [PEACEKEEPERS]
+united nations observer mission in liberia [PEACEKEEPERS]
+united nations observer mission uganda-rwanda [PEACEKEEPERS]
+united nations operation in somalia [PEACEKEEPERS]
+united nations aouzou strip observer [PEACEKEEPERS]
+united nations observer mission in angola [PEACEKEEPERS]
+united nations observer mission in sierra leone [PEACEKEEPERS]
+united nations mission in the central african republic [PEACEKEEPERS]
+united nations mission in sierra leone [PEACEKEEPERS]
+united nations mission in ethiopia and eritrea [PEACEKEEPERS]
+united nations operation in burundi [PEACEKEEPERS]
+united nations organization mission in the democratic republic of the congo [PEACEKEEPERS]
+united nations mission in the central african republic and chad [PEACEKEEPERS]
+united nations mission in the sudan [PEACEKEEPERS]
+united nations observer group in central america [PEACEKEEPERS]
+united nations observer mission in el salvador [PEACEKEEPERS]
+united nations mission in haiti [PEACEKEEPERS]
+united nations support mission in haiti [PEACEKEEPERS]
+united nations verification mission in guatemala [PEACEKEEPERS]
+united nations transition mission in haiti [PEACEKEEPERS]
+united nations civilian police mission in haiti [PEACEKEEPERS]
+united nations general assembly international civilian support mission in haiti [PEACEKEEPERS]
+united nations security force in west new guinea [PEACEKEEPERS]
+united nations india-pakistan observation mission [PEACEKEEPERS]
+united nations good offices mission in afghanistan and pakistan [PEACEKEEPERS]
+united nations advance mission in cambodia [PEACEKEEPERS]
+united nations transitional authority in cambodia [PEACEKEEPERS]
+united nations mission of observers in tajikistan [PEACEKEEPERS]
+united nations mission in east timor [PEACEKEEPERS]
+the united nations transitional administration in east timor [PEACEKEEPERS]
+united nations mission of support in east timor [PEACEKEEPERS]
+united nations integrated mission in timor-leste [PEACEKEEPERS]
+united nations protection force [PEACEKEEPERS]
+united nations observer mission in georgia [PEACEKEEPERS]
+united nations confidence restoration operation [PEACEKEEPERS]
+united nations mission in bosnia and herzegovina [PEACEKEEPERS]
+united nations preventive deployment force [PEACEKEEPERS]
+united nations transitional authority in eastern slavonia, baranja and western sirmium [PEACEKEEPERS]
+united nations mission of observers in prevlaka [PEACEKEEPERS]
+united nations civilian police support group [PEACEKEEPERS]
+united nations iran-iraq military observer group [PEACEKEEPERS]
+united nations iraq-kuwait observation mission [PEACEKEEPERS]
+united nations supervision mission in syria [PEACEKEEPERS]
+united nations mission for the referendum in western sahara [PEACEKEEPERS]
+united nations mission in liberia [PEACEKEEPERS]
+united nations operation in cote d'ivoire [PEACEKEEPERS]
+united nations/african union mission in darfur [PEACEKEEPERS]
+united nations organization stabilization mission in the democratic republic of the congo [PEACEKEEPERS]
+united nations interim security force for abyei [PEACEKEEPERS]
+united nations mission in the republic of south sudan [PEACEKEEPERS]
+united nations support mission in libya [PEACEKEEPERS]
+multidimensional integrated stabilization mission in mali [PEACEKEEPERS]
+international support mission in the central african republic [PEACEKEEPERS]
+united nations stabilization mission in haiti [PEACEKEEPERS]
+united nations military observer group in india and pakistan [PEACEKEEPERS]
+united nations assistance mission in afghanistan [PEACEKEEPERS]
+united nations truce supervision organization [PEACEKEEPERS]
+united nations disengagement observer force [PEACEKEEPERS]
+united nations interim force in lebanon [PEACEKEEPERS]
+united nations peacekeeping force in cyprus [PEACEKEEPERS]
+united nations interim administration mission in kosovo [PEACEKEEPERS]
+unmik [PEACEKEEPERS]
+onuc [PEACEKEEPERS]
+unavem [PEACEKEEPERS]
+#untag [PEACEKEEPERS]
+onumoz [PEACEKEEPERS]
+unomil [PEACEKEEPERS]
+unamsil [PEACEKEEPERS]
+unmee [PEACEKEEPERS]
+onub [PEACEKEEPERS]
+monuc [PEACEKEEPERS]
+minurcat [PEACEKEEPERS]
+unmis [PEACEKEEPERS]
+minugua [PEACEKEEPERS]
+onusal [PEACEKEEPERS]
+unmih [PEACEKEEPERS]
+ungomap [PEACEKEEPERS]
+unamic [PEACEKEEPERS]
+untac [PEACEKEEPERS]
+unmot [PEACEKEEPERS]
+unamet [PEACEKEEPERS]
+untaet [PEACEKEEPERS]
+unmiset [PEACEKEEPERS]
+unmit [PEACEKEEPERS]
+unprofor [PEACEKEEPERS]
+unomig [PEACEKEEPERS]
+uncro [PEACEKEEPERS]
+unmibh [PEACEKEEPERS]
+unpredep [PEACEKEEPERS]
+unmop [PEACEKEEPERS]
+unyom [PEACEKEEPERS]
+uniimog [PEACEKEEPERS]
+unikom [PEACEKEEPERS]
+unsmis [PEACEKEEPERS]
+minurso [PEACEKEEPERS]
+unmil [PEACEKEEPERS]
+unoci [PEACEKEEPERS]
+unamid [PEACEKEEPERS]
+monusco [PEACEKEEPERS]
+unisfa [PEACEKEEPERS]
+unmiss [PEACEKEEPERS]
+unsmil [PEACEKEEPERS]
+minusma [PEACEKEEPERS]
+misca [PEACEKEEPERS]
+minustah [PEACEKEEPERS]
+unmogip [PEACEKEEPERS]
+unama [PEACEKEEPERS]
+untso [PEACEKEEPERS]
+undof [PEACEKEEPERS]
+unifil [PEACEKEEPERS]
+unificyp [PEACEKEEPERS]
+ecomog [PEACEKEEPERS]
+amisom [PEACEKEEPERS]
 </ISSUE>
 
 <ISSUE CATEGORY="SECURITY_SERVICES" TYPE="ALL">
-secret police [SECURITY_SERVICES]
 police [SECURITY_SERVICES]
+policeman [SECURITY_SERVICES]
+policemen [SECURITY_SERVICES]
+policewoman [SECURITY_SERVICES]
+policewomen [SECURITY_SERVICES]
 national guard [SECURITY_SERVICES]
 national guardsmen [SECURITY_SERVICES]
 national guardsman [SECURITY_SERVICES]
 security n:service [SECURITY_SERVICES]
-special police [SECURITY_SERVICES]
-riot police [SECURITY_SERVICES]
 security n:apparatus [SECURITY_SERVICES]
 security n:force [SECURITY_SERVICES]
-antiriot police [SECURITY_SERVICES]
-anti+riot police [SECURITY_SERVICES]
 law enforcement [SECURITY_SERVICES]
 guardsmen [SECURITY_SERVICES]
 constabulary [SECURITY_SERVICES]
 n:constable [SECURITY_SERVICES]
 peace n:officer [SECURITY_SERVICES]
 n:peaceofficer [SECURITY_SERVICES]
+gendarmerie [SECURITY_SERVICES]
+gendarmery [SECURITY_SERVICES]
+mounties [SECURITY_SERVICES]
 </ISSUE>
 
 
@@ -589,8 +743,7 @@ v:democratise [ID_DEMOCRACY]
 </ISSUE>
 
 <ISSUE CATEGORY="ID_IMMIGRATION" TYPE="ALL">
-immigrant [ID_IMMIGRATION]
-immigrants [ID_IMMIGRATION]
+n:immigrant [ID_IMMIGRATION]
 immigration [ID_IMMIGRATION]
 </ISSUE>
 
@@ -650,15 +803,15 @@ anti+globalization n:movement [ECONOMIC_MOVEMENT]
 
 religious n:movement [RELIGIOUS_MOVEMENT]
 
-womens n:activist [WOMENS_MOVEMENT]
-womens activism [WOMENS_MOVEMENT]
-womens n:movement [WOMENS_MOVEMENT]
-anti violence against women [WOMENS_MOVEMENT]
-womens ngo [WOMENS_MOVEMENT]
-womens ngos [WOMENS_MOVEMENT]
-womens rights [WOMENS_MOVEMENT]
-womens n:organization [WOMENS_MOVEMENT]
-womens empowerment [WOMENS_MOVEMENT]
+women's n:activist [WOMENS_MOVEMENT]
+women's activism [WOMENS_MOVEMENT]
+women's n:movement [WOMENS_MOVEMENT]
+anti+violence against women [WOMENS_MOVEMENT]
+women's ngo [WOMENS_MOVEMENT]
+women's ngos [WOMENS_MOVEMENT]
+women's rights [WOMENS_MOVEMENT]
+women's n:organization [WOMENS_MOVEMENT]
+women's empowerment [WOMENS_MOVEMENT]
 gender equality [WOMENS_MOVEMENT]
 
 climate change movement [ENVIRONMENTAL_MOVEMENT]
@@ -2256,7 +2409,22 @@ al+omar mujahideen [NAMED_TERROR_GROUP]
 al+qaeda [NAMED_TERROR_GROUP]
 al+qaeda in iraq [NAMED_TERROR_GROUP]
 al+qaeda in the arabian peninsula [NAMED_TERROR_GROUP]
+al+qaida in the arabian peninsula [NAMED_TERROR_GROUP]
+al+qa'ida in the arabian peninsula [NAMED_TERROR_GROUP]
+aqap [NAMED_TERROR_GROUP]
+~~air quality attainment plan
+~~air quality action plan
+~~as quickly as possible
+~~allied quality assurance publication
+~~allied quality assurance provision
+~~allied quality assurance procedure
 al+qaeda in the islamic maghreb [NAMED_TERROR_GROUP]
+al+qa‘ida in the lands of the islamic maghreb [NAMED_TERROR_GROUP]
+al+qaida in the lands of the islamic maghreb [NAMED_TERROR_GROUP]
+al+qaeda in the lands of the islamic maghreb [NAMED_TERROR_GROUP]
+al+qaeda in mesopotamia [NAMED_TERROR_GROUP]
+aqim [NAMED_TERROR_GROUP] [NAMED_TERROR_GROUP]
+~~agriculture quarantine inspection monitoring
 salafist group for preaching and combat [NAMED_TERROR_GROUP]
 groupe salafiste pour la predication et le combat [NAMED_TERROR_GROUP]
 qaedat al+jihad ﬁ bilad al+maghrib al+islami [NAMED_TERROR_GROUP]
@@ -2484,6 +2652,8 @@ fallujah mujahideen [NAMED_TERROR_GROUP]
 farabundo marti national liberation front [NAMED_TERROR_GROUP]
 farabundo marti popular liberation n:force [NAMED_TERROR_GROUP]
 farc [NAMED_TERROR_GROUP]
+~~federal archives & records center
+~~free arab radio committee
 fatah abu musa [NAMED_TERROR_GROUP]
 fatah revolutionary council [NAMED_TERROR_GROUP]
 fatherland and liberty nationalist front [NAMED_TERROR_GROUP]
